@@ -3,4 +3,4 @@ from .models import Agendamento
 
 @admin.register(Agendamento)
 class AtividadeAdmin(admin.ModelAdmin):
-    list_display = ('nome', 'vacina', 'local_primeira_vacina', 'data_primeira_vacina', 'hora_primeira_vacina', 'local_segunda_vacina', 'data_segunda_vacina', 'hora_segunda_vacina')
+    list_display = ('nome', 'vacina', 'local_vacina', 'data_vacina', 'hora_vacina')

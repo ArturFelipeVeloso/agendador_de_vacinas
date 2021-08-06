@@ -1,5 +1,5 @@
-{% load crispy_forms_tags %}
 <!doctype html>
+
 <html lang="en">
 
 <head>
@@ -14,20 +14,12 @@
 </head>
 
 <body>
-    <h1>Vacine já - Sistema de agendamento da vacina da COVID-19</h1>
 
-    <div class="container">
-        <h3>Cadastro</h3>
-
-        <form method="post">
-            <div class="form-group">
-                {% csrf_token %} {{ form|crispy }}
-            </div>
-
-            <br>
-            <input type="submit" class="btn btn-primary" value="Agendar">
-        </form>
+    <div class="alert alert-success" role="alert">
+        Cadastro efetuado com sucesso! `Prepara o braço que agora é só aguardar. Boa sorte.
     </div>
+
+    <a href="{% url 'home' %}" type="button" class="btn btn-info">Novo Cadastro</a>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

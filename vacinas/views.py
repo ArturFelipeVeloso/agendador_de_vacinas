@@ -11,7 +11,7 @@ def agendamento(request):
             
         if form.is_valid():
             form.save()
-            return redirect('home')          
+            return redirect('mensagem')          
     else:
         form = AgendamentoForm()
     
@@ -20,3 +20,6 @@ def agendamento(request):
         }
         
         return render(request, "site.html", dados)
+    
+def mensagem(request):
+    return render(request, "mensagem.html")
